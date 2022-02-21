@@ -123,5 +123,5 @@ jobs:
           SPACE:    ${{ secrets.CF_SPACE }}
           USERNAME: ${{ secrets.CF_USERNAME }}
           PASSWORD: ${{ secrets.CF_PASSWORD }}
-          command: push -f manifest.yml
+          command: push manifest.yml
           validate: false
