@@ -127,5 +127,5 @@ jobs:
           PASSWORD: ${{ secrets.CF_PASSWORD }}
           manifest: manifest.yml
           validate: false    
-          command: target
+          command: cf8 push -f manifest.yaml
           
