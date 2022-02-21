@@ -106,7 +106,8 @@ jobs:
           #Set artifact name
           name: artifact
           #From this path
-          path: '${{ github.workspace }}/target/*.jar'
+          #path: '${{ github.workspace }}/target/*.jar'
+          path: 'target/elk-stack-example-0.0.1-SNAPSHOT.jar'
           
 # Deploy Jobs
   deploy:
