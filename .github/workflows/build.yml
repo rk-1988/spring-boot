@@ -117,3 +117,11 @@ jobs:
         uses: actions/checkout@v2
       - name: Deploy in CF
         uses: rk-1988/spring-boot@main
+        with: 
+          API:      ${{ secrets.CF_API }}
+          ORG:      ${{ secrets.CF_ORG }}
+          SPACE:    ${{ secrets.CF_SPACE }}
+          USERNAME: ${{ secrets.CF_USERNAME }}
+          PASSWORD: ${{ secrets.CF_PASSWORD }}
+          command: target
+          validate: false
