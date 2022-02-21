@@ -125,4 +125,3 @@ jobs:
           PASSWORD: ${{ secrets.CF_PASSWORD }}
           command: target
           validate: false
-          manifest: manifest.yml
