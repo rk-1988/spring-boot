@@ -5,7 +5,7 @@ applications:
     instances: 1 
     domains: cloud.pcftest.com
     host: questglobalm
-    path: target/elk-stack-example-0.0.1-SNAPSHOT.jar
+    path: elk-stack-example-0.0.1-SNAPSHOT.jar
     random-route: true
     routes:
       - route: elk-stack.cloud.pcftest.com
