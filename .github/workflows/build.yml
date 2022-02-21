@@ -116,15 +116,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy in CF
-        #uses: rk-1988/spring-boot@main
-        uses: jhunt/cf-push@main
+        uses: rk-1988/spring-boot@main
+        #uses: jhunt/cf-push@main
         with: 
-          api:      ${{ secrets.CF_API }}
-          org:      ${{ secrets.CF_ORG }}
-          space:    ${{ secrets.CF_SPACE }}
-          username: ${{ secrets.CF_USERNAME }}
-          password: ${{ secrets.CF_PASSWORD }}
+          API:      ${{ secrets.CF_API }}
+          ORG:      ${{ secrets.CF_ORG }}
+          SPACE:    ${{ secrets.CF_SPACE }}
+          USERNAME: ${{ secrets.CF_USERNAME }}
+          PASSWORD: ${{ secrets.CF_PASSWORD }}
           manifest: manifest.yml
           validate: false    
-          #command: push manifest.yml
+          command: target
           
