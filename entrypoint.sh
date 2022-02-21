@@ -13,4 +13,4 @@ cf8 target -o ${INPUT_ORG} -s ${INPUT_SPACE}
 #starting cf8 cli
 sh -c "cf8 $*" 
 
-cf8 push -f ${INPUT_MANIFEST}
+#cf8 push -f ${INPUT_MANIFEST}
