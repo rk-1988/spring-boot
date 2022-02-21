@@ -5,3 +5,4 @@
     domains: cloud.pcftest.com
     host: questglobalm
     path: data-0.0.1-SNAPSHOT.jar
+    random-route: true
