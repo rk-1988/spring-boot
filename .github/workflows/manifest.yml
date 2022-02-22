@@ -1,0 +1,11 @@
+--- 
+applications: 
+  - name: elk-stack-example
+    memory: 1G
+    instances: 1 
+    domains: cloud.pcftest.com
+    host: questglobalm
+    path: '${{ github.workspace }}/target/*.jar'
+    random-route: true
+    routes:
+      - route: elk-stack.cloud.pcftest.com
