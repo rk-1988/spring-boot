@@ -127,5 +127,5 @@ jobs:
           PASSWORD: ${{ secrets.CF_PASSWORD }}
           manifest: manifest.yml
           validate: false    
-          command: push -f /home/runner/work/_actions/rk-1988/spring-boot/main/manifest.yml
+          command: push -f manifest.yml
           
